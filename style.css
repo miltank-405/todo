@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/* 完了したやつは打ち消し線 */
+.end {
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=style.css.map */

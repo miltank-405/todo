@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ToDo List</title>
+	<link rel="stylesheet" href="style.scss">
 </head>
 <body>
 	<!-- title -->
@@ -13,15 +14,14 @@
 
 	<!-- 入力フォーム -->
 	<div class="form">
-		<form action="">
-			<label>
-				やること
-				<input type="text" name="todo" id="todo">
-			</label>
-			<button type="submit">
-				追加
+		<ol></ol>
+		<form>
+			<input type="text" id="end">
+			<button type="submit" id="enter">
+				リストに追加
 			</button>
 		</form>
 	</div>
+	<script src="main.js"></script>
 </body>
 </html>
