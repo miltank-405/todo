@@ -5,10 +5,14 @@
 // 	- #js-listに入力したタスクを追加して表示
 // formに入力 --(submit)送信(addEventListener)--> 内容を取得して表示
 
+/* とりあえずフォームに入力してコンソールに表示させる */
 // #js-formの要素をGETだぜ！
 const formElement = document.querySelector("#js-form");
 // submitのイベントが発生した時に内容をGET
 const inputElement = document.querySelector("#js-text-input");
+// listをコンテナに
+const containerElement = document.querySelector("js-list");
+
 
 // formからきたsubmitをGETだぜ！
 formElement.addEventListener("submit", (event) => {
@@ -16,6 +20,8 @@ formElement.addEventListener("submit", (event) => {
 	event.preventDefault();
 	console.log(`入力欄の値: ${inputElement.value}`);
 	// ▲consoleに入力した文字を表示させたい 'じゃなくて`でできたw
+
+
 });
 
 
