@@ -26,7 +26,9 @@ const formElement = document.querySelector("#js-form");
 // submitのイベントが発生した時に内容をGET
 const inputElement = document.querySelector("#js-text-input");
 // listをコンテナに
-const containerElement = document.querySelector("js-list");
+const containerElement = document.querySelector("#js-list");
+// DOM要素を追加
+const elem = document.createElement('li');
 
 
 // formからきたsubmitをGETだぜ！
@@ -35,6 +37,13 @@ formElement.addEventListener("submit", (event) => {
 	event.preventDefault();
 	console.log(`入力欄の値: ${inputElement.value}`);
 	// ▲consoleに入力した文字を表示させたい 'じゃなくて`でできたw
+
+	// 下に表示
+	// elemについて調べよう。むしろDOM
+	elem.innerHTML = inputElement.value;
+	containerElement.appendChild(elem);
+
+
 });
 
 // <li>に入力した内容を反映させたい
