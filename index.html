@@ -8,17 +8,15 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container" id="container">
-		<!-- placeholderを使って説明文あるようにしたい -->
-		<input type="text" placeholder="タスクを入力" class="text-input" id="text-input">
-		<ul class="todo-list" id="todo-list">
-			<li class="list-item">
-				<span class="todo-text">ToDoリストを作る！</span>
-				<button class="delete-btn"></button>
-			</li>
-		</ul>
+	<div class="container" id="js-container">
+		<form id="js-form">
+			<!-- placeholderを使って説明文あるようにしたい -->
+			<input class="text-input" id="js-text-input" type="text" placeholder="タスクを入力してENTERを押す" autocomplete="off">
+		</form>
+		<div class="list" id="js-list">
+			<!-- ここにTODOリストがバンバンバンバン -->
+		</div>
 	</div>
-
 	<script src="main.js"></script>
 </body>
 </html>
