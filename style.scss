@@ -22,21 +22,16 @@ html {
 }
 /* /.text-input */
 
-/* .todo-list */
-.todo-list {
+/* .list */
+.list {
 	width: 100%;
 	margin: 0;
 	padding: 0;
 }
-/* /.todo-list */
-
-/* .list-item */
-.list-item {
+.list ul {
 	list-style: none;
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 15px;
 }
-/* /.list-item */
+/* /.list */
+
 
 

@@ -20,8 +20,6 @@ formElement.addEventListener("submit", (event) => {
 	event.preventDefault();
 	console.log(`入力欄の値: ${inputElement.value}`);
 	// ▲consoleに入力した文字を表示させたい 'じゃなくて`でできたw
-
-
 });
 
 
