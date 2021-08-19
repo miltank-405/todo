@@ -35,7 +35,7 @@ const elem = document.createElement('li');
 formElement.addEventListener("submit", (event) => {
 	// ▼submitの元々の動きをstopさせる (いちいちリロードしてウザいから)
 	event.preventDefault();
-	console.log(`入力欄の値: ${inputElement.value}`);
+	console.log(inputElement.value);
 	// ▲consoleに入力した文字を表示させたい 'じゃなくて`でできたw
 
 	// 下に表示
@@ -43,10 +43,19 @@ formElement.addEventListener("submit", (event) => {
 	elem.innerHTML = inputElement.value;
 	containerElement.appendChild(elem);
 
+	// <li>に入力した内容を反映させたい
+
+	// なんか思いついた！けど違った
+	// for (var i=0; i < inputElement.length; i++) {
+	// 	elem.innerHTML = inputElement.value;
+	// 	containerElement.appendChild(elem);
+	// 	elem.textContent = inputElement[i]
+	// 	document.getElementById('js-list').appendChild(elem);
+	// }
 
 });
 
-// <li>に入力した内容を反映させたい
+
 
 
 
