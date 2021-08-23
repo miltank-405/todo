@@ -30,7 +30,6 @@ const containerElement = document.querySelector("#js-list");
 // DOM要素を追加
 const elem = document.createElement('li');
 
-
 // formからきたsubmitをGETだぜ！
 formElement.addEventListener("submit", (event) => {
 	// ▼submitの元々の動きをstopさせる (いちいちリロードしてウザいから)
@@ -44,6 +43,14 @@ formElement.addEventListener("submit", (event) => {
 	containerElement.appendChild(elem);
 
 	// <li>に入力した内容を反映させたい
+	// 新しいタスク追加
+	tasks = { id:js-list.length + 1, name:value }
+
+
+
+
+
+
 
 	// なんか思いついた！けど違った
 	// for (var i=0; i < inputElement.length; i++) {
