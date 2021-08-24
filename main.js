@@ -23,10 +23,16 @@
 /* とりあえずフォームに入力してコンソールに表示させる */
 // #js-formの要素をGETだぜ！
 const formElement = document.querySelector("#js-form");
+
+
 // submitのイベントが発生した時に内容をGET
 const inputElement = document.querySelector("#js-text-input");
+
+
 // listをコンテナに
 const containerElement = document.querySelector("#js-list");
+
+
 // DOM要素を追加
 const elem = document.createElement('li');
 
@@ -43,10 +49,9 @@ formElement.addEventListener("submit", (event) => {
 	containerElement.appendChild(elem);
 
 	// <li>に入力した内容を反映させたい
-	// 新しいタスク追加
-	tasks = { id:js-list.length + 1, name:value }
 
-
+	// const value = Object.keys( elem );
+	// value.length +1;
 
 
 
