@@ -50,9 +50,12 @@ formElement.addEventListener("submit", (event) => {
 
 	// <li>に入力した内容を反映させたい
 
-	// const value = Object.keys( elem );
-	// value.length +1;
+	// elem.textContent = inputElement.value; 
 
+
+
+
+	// Object.keys(elem).length + 1;
 
 
 
