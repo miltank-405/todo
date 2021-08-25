@@ -46,19 +46,24 @@ formElement.addEventListener("submit", (event) => {
 	// 下に表示
 	// elemについて調べよう。むしろDOM
 	elem.innerHTML = inputElement.value;
+	// appendChildで最後の子要素の追加
 	containerElement.appendChild(elem);
 
 	// <li>に入力した内容を反映させたい
 
+
+
+	// ブラウザ動かなくなる...
+	// var clone;
+	// for ( var i=0; i<100; i++ ){
+	// 	clone = elem.cloneNode(true);
+	// 	elem.appendChild(clone);
+	// }
+
+// ▼テキスト生成しても意味ないから
 	// elem.textContent = inputElement.value; 
 
-
-
-
 	// Object.keys(elem).length + 1;
-
-
-
 
 	// なんか思いついた！けど違った
 	// for (var i=0; i < inputElement.length; i++) {
