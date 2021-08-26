@@ -50,7 +50,9 @@ formElement.addEventListener("submit", (event) => {
 	containerElement.appendChild(elem);
 
 	// <li>に入力した内容を反映させたい
-
+	
+	// エンターで送信したときにリストバンバンなるかと思ったけど違った
+	// elem.innerText = inputElement;
 
 
 	// ブラウザ動かなくなる...
