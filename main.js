@@ -51,9 +51,11 @@ formElement.addEventListener("submit", (event) => {
 
 	// <li>に入力した内容を反映させたい
 	
+	// なんでこれ思ったのかわけわかめ
+	// inputElement.push(elem);
+
 	// エンターで送信したときにリストバンバンなるかと思ったけど違った
 	// elem.innerText = inputElement;
-
 
 	// ブラウザ動かなくなる...
 	// var clone;
@@ -64,7 +66,8 @@ formElement.addEventListener("submit", (event) => {
 
 // ▼テキスト生成しても意味ないから
 	// elem.textContent = inputElement.value; 
-
+	
+	// んなわけないか
 	// Object.keys(elem).length + 1;
 
 	// なんか思いついた！けど違った
